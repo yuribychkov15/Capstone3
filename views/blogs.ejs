@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <%- include("partials/header.ejs") %>
+
+
+    <div class="blog-container">
+
+
+        <% blogPosts.forEach(function(post) { %>
+            <div class="blog-post">
+                <h2 class="post-title"><%= post.title %></h2>
+                <div class="post-content"><%= post.content %></div>
+                <p class="post-author"><%= post.author %> </p>
+
+                <a href="/edit/<%= post.id %>" class="button-style">Edit</a>
+
+                <form action="/delete/<%= post.id %>" method="POST">
+                    <input type="submit" value="Delete" class="button-style">
+                </form>
+                
+            </div>
+        <% }); %>
+
+    </div>
+
+
+    <%- include("partials/footer.ejs") %>
+    
+</body>
+</html>

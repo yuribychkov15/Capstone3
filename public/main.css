@@ -1,0 +1,178 @@
+/* Reset some basic elements */
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: white;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    background-color: #b5e48c;
+}
+
+body, html {
+    height: 100%;
+    margin: 0%;
+}
+
+header {
+    background-color: #d9ed92;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #d9ed92;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+.content-container {
+    width: 80%; /* Adjust the width as needed */
+    margin: 0 auto; /* This centers the container */
+    text-align: center; /* Center text elements */
+    background-color: #b5e48c;
+}
+
+#blog-content {
+    width: 100%; /* Full width of the container */
+    height: 300px; /* Or any height you prefer */
+    margin-top: 20px;
+}
+
+/* You might also want to add some padding inside the text area */
+#blog-content {
+    padding: 10px;
+}
+
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.blog-post {
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    width: 80%; /* Adjust based on your layout */
+    background-color: #f9f9f9;
+}
+
+.post-title {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.post-content {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.post-author {
+    font-style: italic;
+    color: #3e8e41;
+}
+
+.form-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-input, .submit-button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.submit-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #3e8e41;
+}
+
+label {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+input[type="submit"], input[name="submit-button"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+input[type="submit"]:hover, input[name="submit-button"]:hover {
+    background-color: #3e8e41;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+.button-style {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px; /* Reduced padding */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px; /* Adjusted font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-decoration: none; 
+    display: inline-block; /* Keeps the button inline */
+    margin: 5px; /* Added margin for spacing */
+}
+
+.button-style:hover {
+    background-color: #3e8e41;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
